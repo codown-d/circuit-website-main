@@ -35,7 +35,7 @@ export default function VectorSection() {
       <img src="/images/join_1.svg" alt="" className="w-full" />
       <div className="p-a img-cont">
         {isMobile ? <ImgCont /> :
-          <div className="flex-r-c" style={{justifyContent:'space-around'}}>
+          <div className="flex-r-c img-cont-pc" style={{justifyContent:'space-around'}}>
             <span className="f16">
               OUR<br />PARTNERS
             </span>

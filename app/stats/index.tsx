@@ -39,7 +39,7 @@ export default function StatsSection() {
             {items_1.map((item, index) => {
               return (
                 <div className={`stats-item flex-c-c p-r stats-item_${index}`} key={index}>
-                  <div className="pt60">{item.title}</div>
+                  <div className="pt60 w-full t-c" style={{overflow:'hidden'}}>{item.title}</div>
                   <div className="f18 fw400" style={{fontFamily:'Mark Pro'}}>{item.desc}</div>
                 </div>
               );

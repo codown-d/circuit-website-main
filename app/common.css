@@ -916,4 +916,7 @@ body {
     body .mobile-close-icon{
         display: flex !important;
     }
+    body .img-cont-pc{
+        display: none;
+    }
 }
