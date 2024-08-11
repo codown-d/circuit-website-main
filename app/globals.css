@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('/font/MonumentExtended-Ultrabold.woff2') format('woff2'),
+    url('/font/MonumentExtended-Ultrabold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('/font/MonumentExtended-Regular.woff2') format('woff2'),
+    url('/font/MonumentExtended-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.home-menu {
+  border-radius: 16px;
+  height: 66px;
+  border: 1px;
+  background: linear-gradient(90.7deg, rgba(255, 255, 255, 0.14) -2.33%, rgba(255, 255, 255, 0.08) 101.74%);
+  border-image-source: linear-gradient(91.15deg, rgba(231, 231, 231, 0.3) -2.01%, rgba(204, 204, 204, 0.09) 104.74%);
+  box-shadow: 0px 0px 20px 0px #0000001A;
+  bottom: 20px;
+  left: 50% !important;
+  transform: translateX(-50%);
+  padding: 0 10px;
+}
+
+.home-menu-item {
+  margin: 0 24px;
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
+}
+
+.home-menu-item:hover::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #28933A;
+  bottom: -21px
+}
+
+.mobile-close-icon {
+  width: 48px;
+  border-radius: 16px;
+  height: 48px;
+  box-shadow: 0px 0px 20px 0px #0000001A;
+  display: none !important;
+}
+
+.close-img {
+  width: 16px;
+  height: 16px;
+}
+.mobile-icon-wrap{
+  width: 100% !important;
+  top: 80px;
+  background: #fff !important;
+  overflow: hidden;
+  padding-bottom: 54px;
+}
+.mobile-menu-item{
+  padding: 33px 0;
+}

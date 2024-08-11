@@ -1,0 +1,17 @@
+.vector {
+    background-color: #fff;
+    width: 100%;
+    padding-bottom: 208px;
+}
+.img-cont {
+    right: 30px;
+    bottom: 50px;
+}
+.vector-pc {
+    width: 242px;
+    height: 93px;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0px 0px 40px 0px #00000026;
+
+}

@@ -1,0 +1,79 @@
+.stats {
+    background-color: #fff;
+}
+
+.stats-content {
+    width: 100%;
+    height: 1168px;
+    border-radius: 20px 100px 0px 0px;
+    background: #28933A url('/images/stats_1.svg') no-repeat center center;
+    background-size: 805px;
+}
+
+.stats-title {
+    font-family: Monument Extended;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+
+}
+
+.stats-item {
+    height: 218px;
+    font-family: Monument Extended;
+    font-size: 44px;
+    font-weight: 400;
+    width: 336px;
+    color: #fff;
+    position: absolute;
+
+}
+.stats-data{
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.stats-item_0{
+    margin-top: -318px;
+    margin-left: 60px;
+    transform: translateX(-50%) skew(-20deg, 0deg);
+    z-index: 9; 
+}
+.stats-item_1{
+    margin-top: -180px;
+    width: 857px;
+    margin-left: 20px;
+    transform: translateX(-50%) skew(-20deg, 0deg);
+}
+.stats-item_2{
+    margin-top: -30px;
+    margin-left: 120px;
+    transform: translateX(-200%) skew(-20deg, 0deg);
+}
+.stats-item_3{
+    margin-top: -30px;
+    margin-left: 200px;
+   transform: translateX(0%) skew(-20deg, 0deg);
+   z-index: -1; 
+}
+.stats-item::before {
+    border-radius: 20px 44px 20px 20px;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 218px;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(8px);
+  }
+  .stats-item_1::before {
+    border-radius:44px;
+  }
+  .stats-item_3::before {
+    border-radius:44px;
+    background: rgba(10, 35, 14, 1); 
+  }
