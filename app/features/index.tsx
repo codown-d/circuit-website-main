@@ -38,15 +38,12 @@ export default function FeaturesSection() {
       style={{ justifyContent: "flex-start" }}
     >
       <p className={clsx("features-title flex-r-c f60")}>Features</p>
-      <div
-        className="flex-r mt60 w-full features-content"
-        style={{ }}
-      >
+      <div className="flex-r mt60 w-full features-content" style={{}}>
         {items.map((item, index) => {
           let { img, icon, iconText, desc } = item;
           return (
             <div
-            key={index}
+              key={index}
               className={`flex-c-c features-item features-item_${index}`}
               style={{
                 alignItems: "flex-start",
@@ -63,8 +60,12 @@ export default function FeaturesSection() {
               >
                 <img src={img} alt="" />
                 <div className="mt100" style={{ padding: "0 0 20px 20px" }}>
-                  {desc.map((ite,i) => {
-                    return <p className="mt8"  key={i}>{ite}</p>;
+                  {desc.map((ite, i) => {
+                    return (
+                      <p className="mt8" key={i}>
+                        {ite}
+                      </p>
+                    );
                   })}
                 </div>
               </div>

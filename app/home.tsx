@@ -3,8 +3,8 @@
 import clsx from "clsx";
 import { useState } from "react";
 function Header() {
-  let [isShow, setIsShow] = useState(false)
-  let typeList = ['Home', 'Features', 'Stats', 'Partners', 'Join us']
+  let [isShow, setIsShow] = useState(false);
+  let typeList = ["Home", "Features", "Stats", "Partners", "Join us"];
   return (
     <div className="flex justify-between items-start w-full px-4 py-4">
       <img className="h-10" src="/logo/circuit.svg" alt="" />
@@ -28,23 +28,43 @@ function Header() {
         </button>
       </div>
       <div className="mobile-close-icon flex-r-c">
-        {isShow ? <img className="close-img" src="/images/close.svg" alt=""
-          onClick={() => {
-            setIsShow(false)
-          }} /> :
-          <img className="close-img" src="/images/open.svg" alt="" onClick={() => {
-            setIsShow(true)
-          }} />
-        }
+        {isShow ? (
+          <img
+            className="close-img"
+            src="/images/close.svg"
+            alt=""
+            onClick={() => {
+              setIsShow(false);
+            }}
+          />
+        ) : (
+          <img
+            className="close-img"
+            src="/images/open.svg"
+            alt=""
+            onClick={() => {
+              setIsShow(true);
+            }}
+          />
+        )}
       </div>
-      <div className="p-a mobile-icon-wrap" style={{ display: !isShow ? 'none' : 'block' }}>
+      <div
+        className="p-a mobile-icon-wrap"
+        style={{ display: !isShow ? "none" : "block" }}
+      >
         <div className="absolute z-0 bottom-0 left-0 w-[300px] md:w-[700px] h-[120px] md:h-[300px] bg-[#4a9145] blur-[100px] md:blur-[200px]" />
         <div className="flex-c-c">
-          {typeList.map(item => {
-            return <p className="home-menu-item mobile-menu-item f16">{item}</p>
+          {typeList.map((item, index) => {
+            return (
+              <p className="home-menu-item mobile-menu-item f16" key={index}>
+                {item}
+              </p>
+            );
           })}
-          <div className="flex-r-c" style={{ padding: '30px 0 60px 0' }}>
-            <img src="/images/home-icon2.svg" alt="" /><p className="ml20 mr10">Join the community</p> <img src="/images/home-icon.svg" alt="" />
+          <div className="flex-r-c" style={{ padding: "30px 0 60px 0" }}>
+            <img src="/images/home-icon2.svg" alt="" />
+            <p className="ml20 mr10">Join the community</p>{" "}
+            <img src="/images/home-icon.svg" alt="" />
           </div>
           <button
             onClick={() => {
@@ -102,7 +122,7 @@ function Title() {
 }
 
 export default function HomeSection() {
-  let typeList = ['Home', 'Features', 'Stats', 'Partners', 'Join us']
+  let typeList = ["Home", "Features", "Stats", "Partners", "Join us"];
   return (
     <div
       className={clsx(
@@ -118,8 +138,12 @@ export default function HomeSection() {
         alt=""
       />
       <div className="home-menu flex-r-c p-a">
-        {typeList.map(item => {
-          return <p className="home-menu-item f16">{item}</p>
+        {typeList.map((item, index) => {
+          return (
+            <p className="home-menu-item f16" key={index}>
+              {item}
+            </p>
+          );
         })}
       </div>
     </div>
